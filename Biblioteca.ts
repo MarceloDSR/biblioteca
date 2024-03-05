@@ -127,9 +127,9 @@ biblioteca.cadastrarUsuario(usuario2);
 console.log("Livros Disponíveis:", biblioteca.listarLivrosDisponiveis());
 console.log("Livros Emprestados:", biblioteca.listarLivrosEmprestados());
 console.log("Livros Atrasados:", biblioteca.listarLivrosAtrasados());
-console.log("Livros de Romance Disponíveis:", biblioteca.listarLivrosPorGenero(GeneroLivro.Romance));
+console.log("Livros de Romance Disponíveis:", biblioteca.listarLivrosPorGenero(GeneroLivro.Suspense));
 console.log("Calculando dias de atraso", biblioteca.calcularDiasAtraso(usuario1, 3))
-console.log("Calculando dias de atraso", biblioteca.calcularDiasAtraso(usuario2, 5))
+console.log("Dias de atraso", biblioteca.calcularDiasAtraso(usuario2, 5))
 console.log("Calculando multa de atraso", biblioteca.verificarMulta(usuario1, 3))
 
 biblioteca.emprestarLivro(livro1, usuario1)
