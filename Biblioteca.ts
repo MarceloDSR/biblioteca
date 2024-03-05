@@ -103,6 +103,11 @@ let biblioteca = new Biblioteca();
 let livro1 = new Livro("Dom Quixote", "Miguel de Cervantes", StatusLivro.Disponivel, [GeneroLivro.Romance]);
 let livro2 = new Livro("1984", "George Orwell", StatusLivro.Emprestado, [GeneroLivro.FiccaoCientifica, GeneroLivro.Suspense]);
 let livro3 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", StatusLivro.Atrasado, [GeneroLivro.Fantasia]);
+let livro4 = new Livro("Uma Breve História do Tempo", "Stephen Hawking", StatusLivro.Reservado, [GeneroLivro.Historia]);
+let livro5 = new Livro("As Flores do Mal", "Charles Baudelaire", StatusLivro.Disponivel, [GeneroLivro.Poesia]);
+let livro6 = new Livro("O Iluminado", "Stephen Hawking", StatusLivro.Disponivel, [GeneroLivro.Terror] );
+let livro7 = new Livro("O Colecionador", " John Fowles", StatusLivro.Disponivel, [GeneroLivro.Suspense]);
+let livro8 = new Livro("Sapiens: Uma Breve História da Humanidade","Yuval Noah Harari", StatusLivro.Disponivel, [GeneroLivro.NaoFiccao]);
 
 let usuario1 = new Usuario("Franco", 1, "Franco@example.com", 0);
 let usuario2 = new Usuario("Franca", 2, "Franca@exemple.com", 3);
@@ -110,6 +115,11 @@ let usuario2 = new Usuario("Franca", 2, "Franca@exemple.com", 3);
 biblioteca.adicionarLivro(livro1);
 biblioteca.adicionarLivro(livro2);
 biblioteca.adicionarLivro(livro3);
+biblioteca.adicionarLivro(livro4);
+biblioteca.adicionarLivro(livro5);
+biblioteca.adicionarLivro(livro6);
+biblioteca.adicionarLivro(livro7);
+biblioteca.adicionarLivro(livro8);
 
 biblioteca.cadastrarUsuario(usuario1);
 biblioteca.cadastrarUsuario(usuario2);
