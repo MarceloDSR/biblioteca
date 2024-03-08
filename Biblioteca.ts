@@ -2,6 +2,7 @@ import { Livro } from "./Livro";
 import { StatusLivro } from "./StatusLivro";
 import { GeneroLivro } from "./GeneroLivro";
 import { Usuario } from "./Usuarios";
+
 export class Biblioteca {
     livros: Livro[];
     usuarios: Usuario[];
@@ -113,24 +114,26 @@ let usuario1 = new Usuario("Franco", 1, "Franco@example.com", 0);
 let usuario2 = new Usuario("Franca", 2, "Franca@exemple.com", 3);
 
 biblioteca.adicionarLivro(livro1);
-biblioteca.adicionarLivro(livro2);
-biblioteca.adicionarLivro(livro3);
-biblioteca.adicionarLivro(livro4);
-biblioteca.adicionarLivro(livro5);
-biblioteca.adicionarLivro(livro6);
-biblioteca.adicionarLivro(livro7);
-biblioteca.adicionarLivro(livro8);
+// biblioteca.adicionarLivro(livro2);
+// biblioteca.adicionarLivro(livro3);
+// biblioteca.adicionarLivro(livro4);
+// biblioteca.adicionarLivro(livro5);
+// biblioteca.adicionarLivro(livro6);
+// biblioteca.adicionarLivro(livro7);
+// biblioteca.adicionarLivro(livro8);
 
 biblioteca.cadastrarUsuario(usuario1);
 biblioteca.cadastrarUsuario(usuario2);
 
-console.log("Livros Disponíveis:", biblioteca.listarLivrosDisponiveis());
+// console.log("Livros Disponíveis:", biblioteca.listarLivrosDisponiveis());
 console.log("Livros Emprestados:", biblioteca.listarLivrosEmprestados());
-console.log("Livros Atrasados:", biblioteca.listarLivrosAtrasados());
-console.log("Livros de Romance Disponíveis:", biblioteca.listarLivrosPorGenero(GeneroLivro.Suspense));
-console.log("Calculando dias de atraso", biblioteca.calcularDiasAtraso(usuario1, 3))
-console.log("Dias de atraso", biblioteca.calcularDiasAtraso(usuario2, 5))
-console.log("Calculando multa de atraso", biblioteca.verificarMulta(usuario1, 3))
+// console.log("Livros Atrasados:", biblioteca.listarLivrosAtrasados());
+// console.log("Livros de Suspense Disponíveis:", biblioteca.listarLivrosPorGenero(GeneroLivro.Suspense));
+// console.log("Livros de Romance Disponíveis:", biblioteca.listarLivrosPorGenero(GeneroLivro.Romance));
+// console.log("Calculando dias de atraso", biblioteca.calcularDiasAtraso(usuario1, 3))
+// console.log("Dias de atraso", biblioteca.calcularDiasAtraso(usuario2, 5))
+// console.log("Calculando multa de atraso", biblioteca.verificarMulta(usuario1, 3))
 
 biblioteca.emprestarLivro(livro1, usuario1)
-biblioteca.devolverLivro(livro1, usuario1)
+biblioteca.emprestarLivro(livro1, usuario2)
+// biblioteca.devolverLivro(livro1, usuario1)
