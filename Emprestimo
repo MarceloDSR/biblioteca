@@ -1,0 +1,11 @@
+import { Livro } from "./Livro";
+
+// Definindo uma classe para representar o empréstimo
+export class Emprestimo extends Livro {
+    atraso: number;
+
+    constructor(livro: Livro, atraso: number) {
+        super(livro.titulo, livro.autor, livro.generos, livro.status); // Chama o construtor da classe Livro
+        this.atraso = atraso;
+    }
+}
