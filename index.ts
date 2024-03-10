@@ -7,17 +7,21 @@ import { Genero } from './Genero';
 
 const biblioteca = new Biblioteca();
 
-const usuario1 = new Usuario("João", 1, "joao@example.com");
+const usuario1 = new Usuario("Max", 1, "max@example.com");
 const usuario2 = new Usuario("Maria", 2, "maria@example.com");
 
-biblioteca.cadastrarUsuario("João", 1, "joao@example.com");
-biblioteca.cadastrarUsuario("Maria", 2, "maria@example.com");
+biblioteca.cadastrarUsuario(usuario1);
+biblioteca.cadastrarUsuario(usuario2);
 
 
 const livro1 = new Livro("Aventuras no Espaço", "Autor A", [Genero.FiccaoCientifica], StatusLivro.Disponivel);
 const livro2 = new Livro("Amor Proibido", "Autor B", [Genero.Romance], StatusLivro.Disponivel);
 const livro3 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", [Genero.Fantasia], StatusLivro.Disponivel);
 biblioteca.livros.push(livro1, livro2, livro3);
+
+
+usuario1.historicoEmprestimos.push({ livro: livro1, atraso: 3 }); 
+usuario1.historicoEmprestimos.push({ livro: livro2, atraso: 0 }); 
 
 
 biblioteca.emprestarLivro(livro1, usuario1);
