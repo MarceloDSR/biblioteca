@@ -1,4 +1,4 @@
-// Enum para representar o estado do livro
+ // Enum para representar o status do livro
  export enum StatusLivro {
     Disponivel = "Disponivel",
     Emprestado = "Emprestado",
