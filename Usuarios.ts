@@ -1,17 +1,17 @@
 import { StatusUsuario } from "./StatusUsuario";
-import { Livro } from "./Livro";
+
 export class Usuario {
     nome: string;
     id: number;
     contato: string;
-    status: StatusUsuario;
     historicoEmprestimos: Livro[];
+    status: StatusUsuario; // Adicionando a propriedade status
 
-    constructor(nome: string, id: number, contato: string) {
+    constructor(nome: string, id: number, contato: string, status: StatusUsuario) {
         this.nome = nome;
         this.id = id;
         this.contato = contato;
-        this.status = StatusUsuario.Ativo;
         this.historicoEmprestimos = [];
+        this.status = status; // Definindo o status ao criar um usuário
     }
 }
