@@ -14,8 +14,7 @@ export class Biblioteca {
         this.reservasPendentes = [];
     }
 
-    cadastrarUsuario(nome: string, id: number, contato: string) {
-        const usuario = new Usuario(nome, id, contato);
+    cadastrarUsuario(usuario: Usuario) {
         this.usuarios.push(usuario);
     }
 
