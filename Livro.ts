@@ -1,16 +1,19 @@
-import { GeneroLivro } from "./GeneroLivro";
 import { StatusLivro } from "./StatusLivro";
+import { Genero } from "./Genero";
 
- export class Livro {
-    titulo: string;
-    autor: string;
-    status: StatusLivro;
-    generos: GeneroLivro[];
+export class Livro {
 
-    constructor(titulo: string, autor: string, status: StatusLivro, generos: GeneroLivro[]) {
-        this.titulo = titulo;
-        this.autor = autor;
-        this.status = status;
-        this.generos = generos;
+    titulo: string
+    autor: string
+    generos: Genero[]
+    status: StatusLivro
+    atraso: number
+    
+    constructor(titulo: string, autor: string, generos: Genero[], status: StatusLivro) {
+        this.titulo = titulo
+        this.autor = autor
+        this.generos = generos
+        this.status = status
+        this.atraso = this.atraso
     }
 }
