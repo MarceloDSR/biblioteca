@@ -3,6 +3,7 @@ import { Livro } from './Livro';
 import { Usuario } from './Usuario';
 import { StatusLivro } from './StatusLivro';
 import { Genero } from './Genero';
+import { Emprestimo } from './Emprestimo';
 
 
 const biblioteca = new Biblioteca();
@@ -20,8 +21,8 @@ const livro3 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", [Genero.Fantas
 biblioteca.livros.push(livro1, livro2, livro3);
 
 
-usuario1.historicoEmprestimos.push({ livro: livro1, atraso: 3 }); 
-usuario1.historicoEmprestimos.push({ livro: livro2, atraso: 0 }); 
+usuario1.historicoEmprestimos.push(new Emprestimo(livro1, 3));
+usuario1.historicoEmprestimos.push(new Emprestimo(livro2, 0));
 
 
 biblioteca.emprestarLivro(livro1, usuario1);
