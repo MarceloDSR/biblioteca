@@ -1,8 +1,8 @@
-// Enum para representar os gêneros literários
+// Enumeração para representar os gêneros literários
 export enum Genero {
-    FiccaoCientifica = "Ficçao Cientifica",
-    Romance = "Romance",
-    Fantasia = "Fantasia",
-    Terror = "Terror",
-    Suspense = "Suspense"
+    FiccaoCientifica = "Ficção Científica", // Valor "Ficção Científica"
+    Romance = "Romance", // Valor "Romance"
+    Fantasia = "Fantasia", // Valor "Fantasia"
+    Terror = "Terror", // Valor "Terror"
+    Suspense = "Suspense" // Valor "Suspense"
 }
